@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  #menubtn{
+    width: 50px;
+    height: 50px;
+    background: #111827;
+    text-align: center;
+    position: fixed;
+    left: 129px;
+    top: -6px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+  
+  .sidebar {
+    width: 180px;
+    height: 100%;
+    background-color: #111827;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: width 1s;
+  }
+  
+  .sidebar-top,
+  .sidebar-bottom,
+  .sidebar-center {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: none;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #4b4b4b;
+  }
+  .sidebar-bottom {
+    border: none;
+    justify-content: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+  
+  .brand {
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: none;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .list-icon {
+    width: 30px;
+    font-size: 20px;
+  }
+  
+  .list-item:hover,
+  .list-item.active {
+    background-color: #374151;
+    color: #fff;
+  }
+  .color-box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  .night-theme {
+    background-color: #312e81;
+  }
+  .light-theme {
+    background-color: #f3f4f6;
+  }
+  .dark-theme {
+    background-color: #111827;
+  }
+  @media only screen and (max-width: 768px) {
+    .sidebar {
+      width: 50px;
+    }
+    .sidebar-top,
+    .sidebar-bottom,
+    .sidebar-center {
+      border-bottom: none;
+    }
+    .brand,
+    .list-item-text {
+      display: none;
+    }
+  }
+  
+  .sidebar.night-theme {
+    background-color: #312e81;
+    color: #b4bbc7;
+  }
+  .list-item:hover,
+  .list-item.active.night-theme {
+    background-color: #4338ca;
+    color: #fff;
+  }
+  .logout {
+    width: 30px;
+    font-size: 30px;
+  }
+  

@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive <Menu></Menu></title>
+</head>
+<body>
+
+    <div id="menubtn">
+        <img src="image/menu.png" id="menu">  
+    </div>
+
+
+
+    <div class="sidebar">
+        <div class="logo sidebar-top">
+            <i class="fab fa-sketch"></i>
+            <span class="brand">Panel</span>
+        </div>
+        <div class="sidebar-center">
+            <ul class="list">
+                <li class="list-item ">
+                    <i class="list-icon fas fa-home"></i>
+                    <span class="list-item-text">Dashboard</span>
+                </li>
+                <li class="list-item ">
+                    <i class="list-icon fas fa-search"></i>
+                    <span class="list-item-text">Search</span>
+                </li>
+                <li class="list-item ">
+                    <i class="list-icon fas fa-stream active"></i>
+                    <span class="list-item-text">Insights</span>
+                </li>
+                <li class="list-item ">
+                    <i class="list-icon fas fa-book"></i>
+                    <span class="list-item-text">Docs</span>
+                </li>
+                <li class="list-item ">
+                    <i class="list-icon fas fa-users"></i>
+                    <span class="list-item-text">Community</span>
+                </li>
+                <li class="list-item ">
+                    <i class="list-icon fas fa-toolbox"></i>
+                    <span class="list-item-text">Tools</span>
+                </li>
+                <li class="list-item ">
+                    <i class="list-icon fas fa-shopping-cart"></i>
+                    <span class="list-item-text">Market</span>
+                </li>
+                <li class="list-item ">
+                    <i class="list-icon fas fa-question-circle"></i>
+                    <span class="list-item-text">Resources</span>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-bottom">
+            <div class="list-item">
+                <i class="fa-solid fa-right-from-bracket logout"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var menu= document.getElementById("menu")
+        var sidanav = document.getElementById("sidanav")
+        sidanav.style.right ="-200px"
+        menubtn.onclick = function(){
+            if(sidanav.style.right == "-200px"){
+                sidanav.style.right = "0"
+                menu.src = "image/close.png";
+            }
+            else{
+                sidanav.style.right ="-200px"
+                menu.src = "image/menu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+speed: 1000,
+speedAsDuration: true
+});  
+    </script>
+
+    
+</body>
+</html>
